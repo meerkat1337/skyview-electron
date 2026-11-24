@@ -10,7 +10,7 @@ Skyview is a desktop application built with Electron. It is designed to run web 
 *   **Immersive UI:** Features a modern design with background support.
 *   **Easy Reset:** Press `Ctrl + Shift + R` (or `Cmd + Shift + R` on Mac) to clear settings and enter a new URL.
 *   **Portable & Installable:** Available as portable executables or standard installers.
-*   **Cross-Platform:** Compatible with Windows, Linux, and macOS.
+*   **Cross-Platform:** Compatible with Windows and Linux.
 
 ---
 
@@ -26,9 +26,37 @@ Skyview is a desktop application built with Electron. It is designed to run web 
 2.  Right-click the file, go to **Properties** > **Permissions**, and allow "Executing file as program".
 3.  Double-click to run.
 
-### macOS
-1.  Download the appropriate `.dmg` file for your hardware (Apple Silicon or Intel) from the **Releases** page.
-2.  Open the `.dmg` and drag Skyview to your **Applications** folder.
+---
+
+## How to Build Your Own Version
+
+If you want to build this app for different platforms (macOS, ARM, etc.) or customize the code, follow these steps:
+
+### 1. Prerequisites
+You must have [Node.js](https://nodejs.org/) installed on your computer.
+
+### 2. Installation
+```bash
+# Clone the repository
+git clone https://github.com/meerkat1337/skyview-electron.git
+cd skyview-electron
+
+# Install the necessary building tools
+npm install
+```
+
+### 3. Running in Development Mode
+To test your changes instantly:
+```bash
+npm start
+```
+
+### 4. Creating Production Builds
+To generate your own installers or portable files:
+```bash
+npm run build
+```
+The finished files will be located in the `dist/` folder.
 
 ---
 
@@ -37,27 +65,6 @@ Skyview is a desktop application built with Electron. It is designed to run web 
 1.  **First Run:** Enter your desired website URL in the setup screen.
 2.  **Launch:** Click the **Launch** button.
 3.  **Resetting URL:** If you need to change the website, press `Ctrl + Shift + R` on your keyboard.
-
----
-
-## For Developers
-
-### Installation
-```bash
-git clone https://github.com/meerkat1337/skyview-electron.git
-cd skyview-electron
-npm install
-```
-
-### Running Development Mode
-```bash
-npm start
-```
-
-### Building the Project
-```bash
-npm run build
-```
 
 ---
 
