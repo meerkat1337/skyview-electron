@@ -75,4 +75,6 @@ This application is a generic wrapper and is not an official product of Yunkan.
 - **Branding & Assets:** All logos, icons, and background imagery used in this project are the exclusive property of [https://yun-kan.com/](https://yun-kan.com/).
 
 ---
+This project is licensed under the MIT License.
+
 *Built by Meerkat*
