@@ -1,0 +1,42 @@
+{
+  "name": "skyview-electron",
+  "version": "1.1.1",
+  "description": "A portable web app wrapper.",
+  "main": "main.js",
+  "author": {
+    "name": "Meerkat",
+    "email": "meerkat@example.com"
+  },
+  "homepage": "https://github.com/meerkat/skyview-electron",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.skyview.app",
+    "productName": "Skyview",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility",
+      "maintainer": "Meerkat <meerkat@example.com>"
+    },
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "icons/icon-512.png"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icons/icon-512.png"
+    }
+  }
+}

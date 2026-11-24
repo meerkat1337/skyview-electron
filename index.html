@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skyview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="setup-screen" class="screen hidden">
+        <div class="card glass">
+            <h1>Skyview</h1>
+            <p>Enter your application URL to begin.</p>
+            <input type="url" id="url-input" placeholder="https://example.com">
+            <button id="save-btn">Launch</button>
+            <button id="reset-btn" style="margin-top: 10px; background: #888;">Reset URL</button>
+            <button id="reset-btn" style="margin-top: 10px; background: #888;">Reset URL</button>
+        </div>
+    </div>
+    <div id="app-screen" class="screen hidden">
+        <button id="settings-btn" style="position: fixed; top: 10px; right: 10px; width: auto; padding: 5px 10px; z-index: 9999; opacity: 0.5;">Settings</button>
+        <!-- The web content will load directly into the window, 
+             so we don't need an iframe here. -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
